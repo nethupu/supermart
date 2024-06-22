@@ -1,0 +1,968 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #9d9c9c;
+  color: #000000;
+  text-align: center; /* Centering text in the body */
+}
+.active{
+    background-color: #1b4d7e;
+    padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #c6ae25;
+}
+
+/*header section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 140px;
+  background-color: #171717;
+}
+
+.logo img {
+  height: 200px; /*height of the logo*/
+  width: auto; /*takes the space required for its content*/
+}
+
+.mainfont {
+  font-size: 30px;
+}
+
+header nav ul {
+  list-style-type: none; /*removing the disc style type*/
+  display: flex; /*allows for more flexible arrangements of the content.*/
+  background-color: #003366; /*Adding background colour.*/
+  padding: 15px; /*padding around content and the border*/
+}
+
+header nav ul li a {
+  margin-right: 20px; /*space between the text in the navbar.*/
+  text-decoration: none; /*removing underline.*/
+  color: white; /*Adding text colour.*/
+}
+
+header a:hover {
+  background-color: #1b4d7e; /*Adding background colour.*/
+  padding: 10px;
+  transition: 2s;
+}
+
+header nav li.active a {
+  border-bottom: 3px solid white; /*border line that show the active page*/
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 100px; /* Adjust logo height for smaller screens */
+  }
+
+  .mainfont {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header nav ul li a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+}
+
+/*Body/main part of the web page*/
+.mainimage img {
+  width: 1518px; /*width of the image*/
+  height: 600px; /*height the image should be*/
+  opacity: 0.8; /*transparency of the image*/
+}
+
+.container {
+  text-align: center; /*aligning the text to center.*/
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  background: forestgreen;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/*Home Page*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.head {
+  background-color: rgb(120, 233, 147);
+  width: 100%;
+}
+
+.home {
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+
+  background-position: center;
+  background-size: cover;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+}
+/* lists */
+.centered-list {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.home .content {
+  border: 0px solid;
+  text-align: center;
+  width: 60rem;
+  height: 40rem;
+  font-size: 2rem;
+  margin-top: -7%;
+}
+.home .content p {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+.home .content h1 {
+  font-size: 3rem;
+}
+
+/*3 product page links on home page*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  width: 380px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.diary {
+  background-image: url(dairy.jpeg);
+}
+.vegetables {
+  background-image: url(vegetables.jpeg);
+}
+
+.cosmetics {
+  background-image: url(cosmetics.jpeg);
+}
+
+.card h2 {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card a {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content th,
+.content td {
+  padding: 8px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add border to cells */
+}
+
+.content th {
+  text-align: center;
+}
+/*3 links for products on homepage ends here*/
+
+/*Container holding the text*/
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/*Centered text*/
+.text-block {
+  position: absolute; /* Position the background text */
+  bottom: 200px;
+  top: 200px;
+  left: 250px;
+  right: 250px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding-left: 40px; /* Some padding */
+  padding-right: 40px; /* Some padding */
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Medium-sized screens */
+  .text-block {
+    bottom: 100px;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    padding: 20px;
+  }
+
+  .centered h1 {
+    font-size: 1.5em;
+  }
+
+  .centered p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small-sized screens */
+  .text-block {
+    bottom: 50px;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .centered h1 {
+    font-size: 1.2em;
+  }
+
+  .centered p {
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Home page ends here*/
+
+/*Diary Page starts here*/
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Medium-sized screens */
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small-sized screens */
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/*Diary page ends here*/
+
+/*Vegetables Page starts here*/
+
+/* Grid container styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 1em 0;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Grid item (vegetable) styling */
+.grid-item {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centering text in grid items */
+}
+
+/* Grid item titles (vegetable names) styling */
+.grid-item h3 {
+  margin: 0.5em 0;
+  color: #4caf50;
+}
+
+/* Grid item prices styling */
+.grid-item p {
+  margin: 0;
+  color: #333;
+}
+
+/* Grid item images*/
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Medium-sized screens */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small-sized screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*Vegetable page ends here*/
+
+/*Cosmetics Product Page starts here*/
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Centering the table */
+  align-items: center;
+}
+
+table img {
+  width: 100%;
+  height: auto;
+}
+
+/* Table cell styling */
+td {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center; /* Centering text in table cells */
+}
+
+/* Product titles styling */
+td h3 {
+  margin: 0.5em 0;
+  color: #000000;
+}
+
+/* Product prices styling */
+td p {
+  margin: 0;
+  color: #333;
+}
+
+/* Container for the entire content */
+.products-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2em; /* Adding space on the sides */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  margin: 0 auto; /* Centering the container */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Medium-sized screens */
+  table {
+    width: 100%;
+    display: block;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left for better readability */
+  }
+
+  td img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small-sized screens */
+  table {
+    width: 100%;
+    display: block;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left for better readability */
+    padding: 0.5em; /* Reduce padding for smaller screens */
+  }
+
+  td img {
+    width: 100%;
+  }
+
+  td h3 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  td p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+/*Cosmetics Product page ends here*/
+
+/*About Us page starts here*/
+
+table {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 70%;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: green;
+  font-weight: bold;
+}
+
+#logo {
+  width: 200px;
+  margin-left: 100px;
+  height: auto;
+}
+#header1 {
+  color: #555;
+}
+.flex_branches {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+
+  margin-bottom: 10px;
+}
+
+.flex img {
+  margin-right: 10px;
+  width: 50%;
+  text-align: left;
+  margin-left: 50px;
+  height: 350px;
+}
+
+.flex iframe {
+  margin: 0;
+  text-align: right;
+  width: 50%;
+  margin-right: 50px;
+  height: 350px;
+}
+
+/*About Us page ends here*/
+
+/*Order link for all product pages*/
+.order-link {
+  color: green;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: 2px solid green;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.order-link:hover {
+  background-color: white;
+  color: #4caf50;
+}
+
+/*Buttons for products on product pages*/
+.MyButton {
+  background-color: green;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.MyButton:hover {
+  background-color: rgb(0, 255, 0);
+  transition: all 0.3s ease;
+}
+/*Remove default styling from the Anchor tag and make it a block*/
+.button-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Buttons for products on product pages ends here*/
+
+/*Order page starts here*/
+/* Styling for the container that holds the product page */
+.product-page-container,
+.order-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Styling for the main heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for each form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling for labels in the form */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styling for inputs, select dropdowns, and textareas in the form */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Styling for the container that holds form action buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* General styling for buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Specific styling for the Add to Cart button on the products page */
+button.add-to-cart-button {
+  margin-top: 20px;
+  background-color: green;
+  color: #fff;
+}
+
+/* Specific styling for the submit button on the order form */
+.form-actions button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Specific styling for the reset button on the order form */
+.form-actions button[type="reset"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Initially hide all product groups */
+.product-group {
+  display: none;
+}
+
+/* Show dairy products when dairy is selected */
+#dairy:checked ~ .order-form-container #dairy-products,
+#vegetables:checked ~ .order-form-container #vegetables-products,
+#cosmetics:checked ~ .order-form-container #cosmetics-products {
+  display: block;
+}
+/*Order page ends here*/
+
+/*Loyalty Registration Page starts here*/
+/* Container styling */
+.loyalty-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: greenyellow;
+}
+
+/* Loyalty scheme benefits styling */
+.loyalty-benefits {
+  margin-top: 20px;
+}
+
+.loyalty-benefit {
+  margin-bottom: 10px;
+}
+
+.loyalty-benefit p {
+  margin: 0;
+}
+
+.loyalty-benefit img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+/*Loyalty Registration Page ends here*/
+
+/*Mobile Responsvie*/
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    justify-content: center; /* Center navbar items */
+  }
+
+  .navbar li {
+    margin: 10px; /* Adjust margin */
+  }
+
+  /* Header */
+  .logo img {
+    height: 80px; /* Adjust logo size */
+  }
+
+  /* Home page */
+  .home .content {
+    width: 90%; /* Adjust width */
+    padding: 15px; /* Adjust padding */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  /* Products page */
+  .card {
+    width: 90%; /* Adjust width */
+  }
+
+  /* Order page */
+  .product-page-container,
+  .order-form-container {
+    padding: 5px; /* Adjust padding */
+  }
+}
+
+/* Media query for screens smaller than 600px (typical mobile screens) */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+  }
+
+  footer {
+    grid-template-columns: 1fr; /* Set one column for mobile */
+  }
+
+  body {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Increase padding for better spacing */
+  }
+
+  .navbar li {
+    display: block; /* Change to block to stack items vertically */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  header nav ul li {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+
+  /*About Us page styling*/
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .branch img {
+    width: 100%; /* Adjust image width to fit smaller screens */
+  }
+
+  .branch {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .branch iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container {
+    padding: 15px;
+  }
+
+  .image-container img {
+    margin: 15px 0;
+  }
+}
+/*About us page styling ends here*/
+
+/*Vegetable page styling starts here*/
+.grid-container {
+  padding: 1em 5px; /* Adjust padding for smaller screens */
+  margin-left: 5px; /* Adjust margin for smaller screens */
+  margin-right: 5px; /* Adjust margin for smaller screens */
+}
+
+.grid-item {
+  padding: 0.5em; /* Adjust padding for smaller screens */
+}
+/*Vegetable page styling ends here*/
+
+/*Order page styling starts*/
+.product-page-container,
+.order-form-container {
+  width: 90%;
+  max-width: none;
+  margin: 20px auto;
+  padding: 10px;
+}
+/*Order page styling ends*/
+
+
